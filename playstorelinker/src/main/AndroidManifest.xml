@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gmail.ayteneve93.playstorelinker" />
+    package="com.gmail.ayteneve93.playstorelinker">
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
+
+
