@@ -1,2 +1,2 @@
-include ':app', ':playstorelinker'
+include ':test', ':playstorelinker'
 rootProject.name='ApexAndroidPlayStoreLinker'
