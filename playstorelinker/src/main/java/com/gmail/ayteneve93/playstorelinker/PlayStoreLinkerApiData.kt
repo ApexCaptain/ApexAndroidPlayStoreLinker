@@ -1,7 +1,9 @@
 package com.gmail.ayteneve93.playstorelinker
 
+import androidx.annotation.Keep
 import com.squareup.moshi.Json
 
+@Keep
 data class CommonApiResult<R>(
     @field:Json(name = "statusCode") val statusCode: Int,
     @field:Json(name = "msg") val msg: String,
@@ -9,9 +11,12 @@ data class CommonApiResult<R>(
 )
 
 object ApplicationInfoData {
+    @Keep
     data class ApplicationInfoRequestBody(
         val applicationId: String
     )
+
+    @Keep
     data class ApplicationInfoResultBody(
         @field:Json(name = "title") val title: String,
         @field:Json(name = "description") val description : String,
